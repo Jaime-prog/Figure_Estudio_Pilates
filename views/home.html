@@ -105,23 +105,25 @@
         <div class="container mx-auto">
             <h2 class="py-6 uppercase font-display text-4xl">Nuestros Paquetes</h2>
             <div class="container mx-auto">
-                <div class="grid grid-cols-3 gap-8">
-                    <div class="grid grid-cols-3">
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden col-span-2">
-                            <div class="px-6 py-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-display">
+                    <div class="grid grid-cols-3 md:transform lg:hover:scale-110 lg:transition-transform">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden col-span-2 ">
+                            <div class=" px-6 py-8">
                                 <h3 class="text-2xl font-semibold mb-4">Introductorio</h3>
                                 <p class="text-gray-600 mb-4"><strong>Incluye 1 clase</strong></p>
                                 <p class="text-3xl font-bold mb-4">$300 MXN</p>
                                 <p class="text-gray-600 mb-4">Caducidad 7 días</p>
                                 <button
-                                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">Comprar</button>
+                                    class="bg-blue-400 hover:bg-blue-500 text-white font-bold font-sans py-2 px-4 rounded-full">Comprar</button>
                             </div>
                         </div>
-                        <div class="col-span-1" style="background-image: linear-gradient(225deg, #3D61FA, #4D84A4);">
+                        <div class="col-span-1 rounded-lg" style="background-color: #8EC5FC;
+                        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+                        ">
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-3">
+                    <div class="grid grid-cols-3 md:transform lg:hover:scale-110 lg:transition-transform">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden col-span-2">
                             <div class="px-6 py-8">
                                 <h3 class="text-2xl font-semibold mb-4">Básico</h3>
@@ -129,25 +131,29 @@
                                 <p class="text-3xl font-bold mb-4">$2,000 MXN</p>
                                 <p class="text-gray-600 mb-4">Caducidad 30 días</p>
                                 <button
-                                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">Comprar</button>
+                                    class="bg-blue-400 hover:bg-blue-500 text-white font-bold font-sans py-2 px-4 rounded-full">Comprar</button>
+
                             </div>
                         </div>
-                        <div class="col-span-1" style="background-image:   linear-gradient(225deg, #33D2D4, #E5035E);">
+                        <div class="col-span-1 rounded-lg" style="background-color: #FAACA8;
+                        background-image: linear-gradient(17deg, #FAACA8 0%, #DDD6F3 100%);">
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-3">
+                    <div class="grid grid-cols-3 md:transform lg:hover:scale-110 lg:transition-transform">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden col-span-2">
                             <div class="px-6 py-8">
-                                <h3 class="text-2xl font-semibold mb-4">Básico</h3>
-                                <p class="text-gray-600 mb-4"><strong>Incluye 10 clases</strong></p>
-                                <p class="text-3xl font-bold mb-4">$2,000 MXN</p>
+                                <h3 class="text-2xl font-semibold mb-4">Avanzado</h3>
+                                <p class="text-gray-600 mb-4"><strong>Clases Ilimitadas</strong></p>
+                                <p class="text-3xl font-bold mb-4">$3,200 MXN</p>
                                 <p class="text-gray-600 mb-4">Caducidad 30 días</p>
                                 <button
-                                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">Comprar</button>
+                                    class="bg-blue-400 hover:bg-blue-500 text-white font-bold font-sans py-2 px-4 rounded-full">Comprar</button>
                             </div>
                         </div>
-                        <div class="col-span-1" style="background-image:   linear-gradient(225deg, #33D2D4, #E5035E);">
+                        <div class="col-span-1 rounded-lg" style="background-color: #FF9A8B;
+                        background-image: linear-gradient(45deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+                        ">
                         </div>
                     </div>
 
@@ -157,23 +163,106 @@
         </div>
     </section>
 
-    <section id="classes">
-        <div class="grid grid-cols-2">
+    <section id="classes" class="bg-gray-100">
+        <div class="grid grid-cols-1 md:grid-cols-2 ">
             <div>
-                <img src="\assets\images\yoga4.jpg" alt="pilates" style="width: 100%;" class="h-full object-cover">
+                <img src="\assets\images\yoga4.jpg" alt="pilates 2" style="width: 100%;" class="h-full object-cover">
             </div>
-            <div>
+
+            <div class="relative">
                 <img src="\assets\images\yoga5.jpg" alt="pilates 2" style="width: 100%;" class="h-full object-cover">
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <div class="bg-gray-200 bg-opacity-50 rounded-lg p-4 flex flex-col items-center justify-center">
+                        <h2 class="text-white text-4xl font-bold mb-4 font-display">Pruebe ya su primera clase</h2>
+                        <button
+                            class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full font-sans text-center">Reserva
+                            Ahora</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="benefits" class="bg-gray-100 blur-3xl"
+        style="background-image: url(/assets/images/mesas.jpg); background-size: cover; background-position: center;">
+        <h2 class="text-center py-8 uppercase font-display text-4xl text-white">Beneficios</h2>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 font-sans">
+                <div class="rounded-lg shadow-xl overflow-hidden p-4 flex flex-col items-center bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-barbell" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M2 12h1" />
+                        <path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2" />
+                        <path d="M6 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z" />
+                        <path d="M9 12h6" />
+                        <path d="M15 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z" />
+                        <path d="M18 8h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2" />
+                        <path d="M22 12h-1" />
+                    </svg>
+                    <h3 class="text-lg font-bold mb-2">Fuerza mejorada</h3>
+                    <p class="text-gray-600 text-center">Pilates se centra en el equilibrio muscular y mejora la fuerza
+                        y la
+                        flexibilidad.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-4 flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart-check" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M19.5 12.572l-3 2.928m-5.5 3.5a8916.99 8916.99 0 0 0 -6.5 -6.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                        <path d="M15 19l2 2l4 -4" />
+                    </svg>
+                    <h3 class="text-lg font-bold mb-2">Salud cardiovascular</h3>
+                    <p class="text-gray-600 text-center">Pilates aumenta la capacidad pulmonar y la circulación a través
+                        de
+                        la respiración profunda.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-4 flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brain" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8" />
+                        <path d="M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8" />
+                        <path d="M17.5 16a3.5 3.5 0 0 0 0 -7h-.5" />
+                        <path d="M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0" />
+                        <path d="M6.5 16a3.5 3.5 0 0 1 0 -7h.5" />
+                        <path d="M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10" />
+                    </svg>
+                    <h3 class="text-lg font-bold mb-2">Salud Mental</h3>
+                    <p class="text-gray-600 text-center">Pilates reduce los niveles de estrés y mejora la concentración
+                        y la
+                        del cuerpo.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-4 flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stretching-2" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M11 4a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                        <path d="M6.5 21l3.5 -5" />
+                        <path d="M5 11l7 -2" />
+                        <path d="M16 21l-4 -7v-5l7 -4" />
+                    </svg>
+                    <h3 class="text-lg font-bold mb-2">Balance y Postura</h3>
+                    <p class="text-gray-600 text-center">Pilates mejora la conciencia corporal y ayuda a prevenir
+                        lesiones musculoesqueléticas.</p>
+                </div>
             </div>
         </div>
     </section>
+
 
 
     <!-- Pie de página -->
     <footer class="bg-gray-800 text-white p-12 md:p-20 justify-center font-sans">
         <div class="grid lg:grid-cols-3 md:grid-cols-2 md:gap-12">
             <div class="flex justify-center col-span-2 md:col-span-1 mb-5 md:mb-0">
-                <div class="w-48 h-48 flex justify-center items-center">
+                <div class="w-28 h-28 flex justify-center items-center">
                     <img src="\assets\images\pfizer\pfizer.png" alt="Logo" />
                 </div>
             </div>
@@ -260,8 +349,11 @@
             </div>
         </div>
         <div class="flex justify-center pt-10 text-sm">
-            <p>© 2023 | Figure Studio Pilates</p>
+            <p>©
+                <script>document.write(new Date().getFullYear())</script> | Figure Studio Pilates
+            </p>
         </div>
+
     </footer>
 
     <script>
