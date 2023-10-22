@@ -10,7 +10,8 @@ module.exports = {
         'display': ['Outfit', 'ui-serif', 'Georgia', 'serif'],
       },
       colors: {
-        mycolor: '#D2E0FB',
+        other: '#D2E0FB',
+        primary: '#1E3A8A'
       },
     },
   },

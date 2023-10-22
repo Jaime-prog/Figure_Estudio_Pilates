@@ -2,19 +2,105 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Figure Estudio Pilates</title>
+    <link rel="icon" type="image/png" href="\assets\images\pfizer\pfizer.png">
 
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap" rel="stylesheet">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap" rel="stylesheet" />
+    <link href="\dist\output.css" rel="stylesheet" />
 </head>
 
+<!-- NavBar Section -->
 
+<nav class="flex flex-wrap px-8 py-6 items-center justify-between w-full text-lg font-display">
+    <a href="/">
+        <img class="h-8 w-16 md:h-10 md:w-10" src="\assets\images\pfizer\pfizer.png" alt="Logo">
+    </a>
+    <svg id="menu-button" class="h-6 w-6 cursor-pointer lg:hidden" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <div class="hidden w-full lg:flex lg:items-center text-center lg:w-auto" id="menu">
+        <ul class="pt-2 text-base font-medium lg:flex lg:justify-between lg:pt-0">
+            <li>
+                <a class="lg:p-4 py-2 block hover:underline" href="/catalogo">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a class="lg:p-4 py-2 block hover:underline" href="/nosotros">
+                    Nosotros
+                </a>
+            </li>
+            <li>
+                <a class="lg:p-4 py-2 block hover:underline" href="/servicios">
+                    Servicios
+                </a>
+            </li>
+
+            <li>
+                <a class="lg:p-4 py-2 block hover:underline" href="/dashboard">
+                    Reservar
+                </a>
+            </li>
+            <li>
+
+                <a href="/login">
+                    <button
+                        class="mt-2 px-5 py-2 w-full bg-gray-800 text-base text-white font-medium rounded-full hover:font-medium hover:bg-gray-700">
+                        Iniciar Sesión
+                    </button>
+                </a>
+
+                <div class="hidden lg:block ml-6 relative">
+                    <div class="object-center">
+                        <!-- <button id="userButton" class="mr-6 mt-2 block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-800 focus:outline-none">
+                            </button> -->
+                        <i id="userButton" class="mt-7 fa-solid fa-circle-user fa-2xl"></i>
+                    </div>
+                    <div id="userDropdown" class="w-48 rounded-lg absolute right-0 mt-6 bg-white hidden border">
+                        <a class="block px-4 py-2 text-gray-800 hover:bg-gray-50" href="/perfil">Mi perfil</a>
+                        <hr class="bg-gray-800">
+                        <a class="block px-4 py-2 text-red-500 hover:bg-gray-50" href="/logout">Cerrar sesión</a>
+                    </div>
+                </div>
+
+            </li>
+
+            <li>
+                <a class="lg:hidden lg:p-4 py-2 block hover:underline" href="/perfil">
+                    Mi perfil
+                </a>
+            </li>
+
+
+            <li>
+                <a class="lg:hidden lg:p-4 py-2 block hover:underline" href="/logout">
+                    Cerrar sesión
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+
+    button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+    const userButton = document.getElementById('userButton')
+    const userDropdown = document.getElementById('userDropdown')
+    userButton.addEventListener('click', () => {
+        userDropdown.classList.toggle('hidden')
+    })
+</script>
 
 <body>
     <!-- Encabezado -->
@@ -29,43 +115,45 @@
         <h2 class="text-3xl font-semibold">Nuestros Servicios de Pilates</h2>
         <!-- Agrega aquí el contenido de tus servicios de Pilates -->
     </main>
+    <section>
+
+
+    </section>
 
     <!-- Pie de página -->
-    <footer class="bg-my-color text-white p-12 md:p-20 justify-center">
+    <footer class="bg-gray-800 text-white p-12 md:p-20 justify-center">
         <div class="grid lg:grid-cols-3 md:grid-cols-2 md:gap-12">
             <div class="flex justify-center col-span-2 md:col-span-1 mb-5 md:mb-0">
-                <div class=" w-48 h-48 flex justify-center items-center">
-                    <img src="\assets\images\pfizer\pfizer.png" alt="Logo">
+                <div class="w-48 h-48 flex justify-center items-center">
+                    <img src="\assets\images\pfizer\pfizer.png" alt="Logo" />
                 </div>
             </div>
             <div class="md:pt-0">
-                <h3 class="text-lg font-semibold">
-                    Nosotros
-                </h3>
+                <h3 class="text-lg font-semibold">Ubicaciones</h3>
                 <ul class="text-sm py-5">
                     <div class="space-y-4">
                         <li>
-                            <a class="hover:underline" href="/catalogo">Propiedades</a>
+                            <a>Calle Falsa 123, Colonia Ficticia, Ciudad de México, Código
+                                Postal 12345</a>
                         </li>
                         <li>
-                            <a class="hover:underline" href="/contacto">Vender / Rentar</a>
-                        </li>
-                        <li>
-                            <a class="hover:underline" href="/nosotros">Nosotros</a>
-                        </li>
-                        <li>
-                            <a class="hover:underline" href="/servicios">Servicios</a>
+                            <span class="text-base hover:underline hover:text-amber-500">
+                                <a href="https://www.google.com.mx/maps/place/Plaza+Patio+Quer%C3%A9taro/@20.6122781,-100.4926182,12z/data=!4m15!1m8!3m7!1s0x85d35b8fdc5b9255:0x97b094aa561b832f!2sSantiago+de+Quer%C3%A9taro,+Qro.!3b1!8m2!3d20.5887932!4d-100.3898881!16zL20vMDF2ZGIz!3m5!1s0x85d3517d4db85131:0xd342c562cd50209d!8m2!3d20.6182412!4d-100.4399162!16s%2Fg%2F11j03pd2ld?entry=ttu"
+                                    target="_blank">
+                                    Ver Mapa
+                                </a>
+                            </span>
+
                         </li>
                     </div>
                 </ul>
             </div>
             <div class="col-span-2 md:col-span-1">
-                <h3 class="text-lg font-semibold">
-                    Contacto
-                </h3>
+                <h3 class="text-lg font-semibold">Contacto</h3>
                 <ul class="text-sm py-5">
                     <div class="space-y-4">
-                        <li class="flex items-center"> <!-- Use flex container -->
+                        <li class="flex items-center">
+                            <!-- Use flex container -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
                                 width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -80,43 +168,50 @@
                     </div>
                 </ul>
                 <div class="flex space-x-5">
-                    <a href="https://www.facebook.com" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-brand-facebook transform hover:scale-110 transition-transform hover:text-blue-500"
-                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                        </svg>
-                    </a>
-                    <a href="https://www.youtube.com" target="_blank">
-                        <svg xmlns="http://w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-brand-youtube transform hover:scale-110 transition-transform hover:text-red-500"
-                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
-                            <path d="M10 9l5 3l-5 3z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <svg xmlns="http://w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-brand-instagram transform hover:scale-110 transition-transform  hover:text-pink-500"
-                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4v-8z" />
-                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                            <path d="M16.5 7.5l0 .01" />
-                        </svg>
-                    </a>
+                    <div class="w-10 h-10">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-facebook transform hover:scale-110 transition-transform hover:text-blue-500"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="w-10 h-10">
+                        <a href="https://www.youtube.com" target="_blank">
+                            <svg xmlns="http://w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-youtube transform hover:scale-110 transition-transform hover:text-red-500"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                                <path d="M10 9l5 3l-5 3z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="w-10 h-10">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <svg xmlns="http://w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-instagram transform hover:scale-110 transition-transform hover:text-pink-500"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4v-8z" />
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16.5 7.5l0 .01" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="flex justify-center pt-10 text-sm">
-            <p>
-                © 2023 | Figure Estudio Pilates
-            </p>
+            <p>© 2023 | Figure Estudio Pilates</p>
         </div>
     </footer>
 </body>
