@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title>Figure Estudio Pilates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Figure Studio Pilates</title>
     <link rel="icon" type="image/png" href="\assets\images\pfizer\pfizer.png">
 
     <!-- Google fonts -->
@@ -38,36 +39,34 @@
             </li>
             <li>
                 <a class="lg:p-4 py-2 block hover:underline" href="/servicios">
-                    Servicios
+                    Clases
                 </a>
             </li>
-
             <li>
                 <a class="lg:p-4 py-2 block hover:underline" href="/dashboard">
                     Reservar
                 </a>
             </li>
-            <li>
 
-                <a href="/login">
-                    <button
-                        class="mt-2 px-5 py-2 w-full bg-gray-800 text-base text-white font-medium rounded-full hover:font-medium hover:bg-gray-700">
-                        Iniciar Sesión
-                    </button>
-                </a>
+            <a href="/login">
+                <button
+                    class="mt-2 px-5 py-2 w-5/8 bg-gray-800 text-base text-white font-medium rounded-full hover:font-medium hover:bg-gray-700">
+                    Iniciar Sesión
+                </button>
+            </a>
 
-                <div class="hidden lg:block ml-6 relative">
-                    <div class="object-center">
-                        <!-- <button id="userButton" class="mr-6 mt-2 block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-800 focus:outline-none">
+            <div class="hidden lg:block ml-6 relative">
+                <div class="object-center">
+                    <!-- <button id="userButton" class="mr-6 mt-2 block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-800 focus:outline-none">
                             </button> -->
-                        <i id="userButton" class="mt-7 fa-solid fa-circle-user fa-2xl"></i>
-                    </div>
-                    <div id="userDropdown" class="w-48 rounded-lg absolute right-0 mt-6 bg-white hidden border">
-                        <a class="block px-4 py-2 text-gray-800 hover:bg-gray-50" href="/perfil">Mi perfil</a>
-                        <hr class="bg-gray-800">
-                        <a class="block px-4 py-2 text-red-500 hover:bg-gray-50" href="/logout">Cerrar sesión</a>
-                    </div>
+                    <i id="userButton" class="mt-7 fa-solid fa-circle-user fa-2xl"></i>
                 </div>
+                <div id="userDropdown" class="w-48 rounded-lg absolute right-0 mt-6 bg-white hidden border">
+                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-50" href="/perfil">Mi perfil</a>
+                    <hr class="bg-gray-800">
+                    <a class="block px-4 py-2 text-red-500 hover:bg-gray-50" href="/logout">Cerrar sesión</a>
+                </div>
+            </div>
 
             </li>
 
@@ -87,41 +86,91 @@
     </div>
 </nav>
 
-<script>
-    const button = document.querySelector('#menu-button');
-    const menu = document.querySelector('#menu');
-
-    button.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-    });
-
-    const userButton = document.getElementById('userButton')
-    const userDropdown = document.getElementById('userDropdown')
-    userButton.addEventListener('click', () => {
-        userDropdown.classList.toggle('hidden')
-    })
-</script>
 
 <body>
-    <!-- Encabezado -->
-    <header class="bg-blue-500 p-4">
-        <div class="container mx-auto">
-            <h1 class="text-2xl text-white">Servicios de Pilates</h1>
-        </div>
-    </header>
-
     <!-- Contenido principal -->
-    <main class="container mx-auto mt-4 p-4">
-        <h2 class="text-3xl font-semibold">Nuestros Servicios de Pilates</h2>
-        <!-- Agrega aquí el contenido de tus servicios de Pilates -->
+    <main id="hero" class="font-display"
+        style="background-image: url(/assets/images/yoga1.jpg); background-size: cover; background-position: center;">
+        <div class="container lg:bg-origin-padding flex flex-col justify-center items-center h-screen">
+            <div class="mx-auto text-center">
+                <h1 class="text-8xl font-semibold text-white pl-96 uppercase">Figure Studio Pilates</h1>
+                <p class="text-2xl font-semibold text-white pl-96">Encuentra Tu Equilibrio con Pilates: Cuerpo y Mente
+                    Saludables</p>
+            </div>
+        </div>
     </main>
-    <section>
 
 
+    <section class="bg-gray-100 py-12" id="price">
+        <div class="container mx-auto">
+            <h2 class="py-6 uppercase font-display text-4xl">Nuestros Paquetes</h2>
+            <div class="container mx-auto">
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="grid grid-cols-3">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden col-span-2">
+                            <div class="px-6 py-8">
+                                <h3 class="text-2xl font-semibold mb-4">Introductorio</h3>
+                                <p class="text-gray-600 mb-4"><strong>Incluye 1 clase</strong></p>
+                                <p class="text-3xl font-bold mb-4">$300 MXN</p>
+                                <p class="text-gray-600 mb-4">Caducidad 7 días</p>
+                                <button
+                                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="col-span-1" style="background-image: linear-gradient(225deg, #3D61FA, #4D84A4);">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden col-span-2">
+                            <div class="px-6 py-8">
+                                <h3 class="text-2xl font-semibold mb-4">Básico</h3>
+                                <p class="text-gray-600 mb-4"><strong>Incluye 10 clases</strong></p>
+                                <p class="text-3xl font-bold mb-4">$2,000 MXN</p>
+                                <p class="text-gray-600 mb-4">Caducidad 30 días</p>
+                                <button
+                                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="col-span-1" style="background-image:   linear-gradient(225deg, #33D2D4, #E5035E);">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden col-span-2">
+                            <div class="px-6 py-8">
+                                <h3 class="text-2xl font-semibold mb-4">Básico</h3>
+                                <p class="text-gray-600 mb-4"><strong>Incluye 10 clases</strong></p>
+                                <p class="text-3xl font-bold mb-4">$2,000 MXN</p>
+                                <p class="text-gray-600 mb-4">Caducidad 30 días</p>
+                                <button
+                                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="col-span-1" style="background-image:   linear-gradient(225deg, #33D2D4, #E5035E);">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </section>
 
+    <section id="classes">
+        <div class="grid grid-cols-2">
+            <div>
+                <img src="\assets\images\yoga4.jpg" alt="pilates" style="width: 100%;" class="h-full object-cover">
+            </div>
+            <div>
+                <img src="\assets\images\yoga5.jpg" alt="pilates 2" style="width: 100%;" class="h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+
     <!-- Pie de página -->
-    <footer class="bg-gray-800 text-white p-12 md:p-20 justify-center">
+    <footer class="bg-gray-800 text-white p-12 md:p-20 justify-center font-sans">
         <div class="grid lg:grid-cols-3 md:grid-cols-2 md:gap-12">
             <div class="flex justify-center col-span-2 md:col-span-1 mb-5 md:mb-0">
                 <div class="w-48 h-48 flex justify-center items-center">
@@ -164,7 +213,7 @@
                             </svg>
                             <span class="ml-2">+52 442 123 1543</span>
                         </li>
-                        <li class="font-sans">figureestudiopilates@gmail.com</li>
+                        <li class="font-sans">figurstudiopilates@gmail.com</li>
                     </div>
                 </ul>
                 <div class="flex space-x-5">
@@ -211,9 +260,24 @@
             </div>
         </div>
         <div class="flex justify-center pt-10 text-sm">
-            <p>© 2023 | Figure Estudio Pilates</p>
+            <p>© 2023 | Figure Studio Pilates</p>
         </div>
     </footer>
+
+    <script>
+        const button = document.querySelector('#menu-button');
+        const menu = document.querySelector('#menu');
+
+        button.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const userButton = document.getElementById('userButton')
+        const userDropdown = document.getElementById('userDropdown')
+        userButton.addEventListener('click', () => {
+            userDropdown.classList.toggle('hidden')
+        })
+    </script>
 </body>
 
 </html>
