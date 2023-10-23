@@ -20,7 +20,7 @@
 
 <nav class="flex flex-wrap px-8 py-6 items-center justify-between w-full text-lg font-display">
     <a href="/">
-        <img class="h-8 w-16 md:h-10 md:w-10" src="assets/images/pfizer/pfizer.png" alt="Logo">
+        <img class="h-8 w-16 md:h-10 md:w-10" src="/assets/images/pfizer/pfizer.png" alt="Logo">
     </a>
     <svg id="menu-button" class="h-6 w-6 cursor-pointer lg:hidden" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -92,10 +92,12 @@
     <main id="hero" class="font-display"
         style="background-image: url(/assets/images/yoga1.jpg); background-size: cover; background-position: center;">
         <div class="container lg:bg-origin-padding flex flex-col justify-center items-center h-screen">
-            <div class="mx-auto text-center">
-                <h1 class="text-8xl font-semibold text-white pl-96 uppercase">Figure Studio Pilates</h1>
-                <p class="text-2xl font-semibold text-white pl-96">Encuentra Tu Equilibrio con Pilates: Cuerpo y Mente
-                    Saludables</p>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <div class="mx-auto text-center">
+                    <h1 class="text-8xl font-semibold text-white uppercase">Figure Studio Pilates</h1>
+                    <p class="text-2xl font-semibold text-white">Encuentra Tu Equilibrio con Pilates: Cuerpo y Mente
+                        Saludables</p>
+                </div>
             </div>
         </div>
     </main>
@@ -103,9 +105,9 @@
 
     <section class="bg-gray-100 py-12" id="price">
         <div class="container mx-auto">
-            <h2 class="py-6 uppercase font-display text-4xl">Nuestros Paquetes</h2>
+            <h2 class="py-6 uppercase font-display text-4xl mx-8">Nuestros Paquetes</h2>
             <div class="container mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-display">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-display mx-8">
                     <div class="grid grid-cols-3 md:transform lg:hover:scale-110 lg:transition-transform">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden col-span-2 ">
                             <div class=" px-6 py-8">
@@ -166,11 +168,11 @@
     <section id="classes" class="bg-gray-100">
         <div class="grid grid-cols-1 md:grid-cols-2 ">
             <div>
-                <img src="assets/images/yoga4.jpg" alt="pilates 4" style="width: 100%;" class="h-full object-cover">
+                <img src="/assets/images/yoga4.jpg" alt="pilates 4" style="width: 100%;" class="h-full object-cover">
             </div>
 
             <div class="relative">
-                <img src="assets/images/yoga5.jpg" alt="pilates 5" style="width: 100%;" class="h-full object-cover">
+                <img src="/assets/images/yoga5.jpg" alt="pilates 5" style="width: 100%;" class="h-full object-cover">
                 <div class="absolute inset-0 flex flex-col items-center justify-center">
                     <div class="bg-gray-200 bg-opacity-50 rounded-lg p-4 flex flex-col items-center justify-center">
                         <h2 class="text-white text-4xl font-bold mb-4 font-display">Pruebe ya su primera clase</h2>
@@ -184,11 +186,50 @@
         </div>
     </section>
 
-    <section id="benefits" class="bg-gray-100 blur-3xl"
+    <section id="instructors" class="bg-gray-100 py-12">
+        <div class="container mx-auto">
+          <h2 class="py-6 uppercase font-display text-4xl mx-8">Conoce a nuestros instructores</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-display mx-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="/assets/images/instructor1.jpg" alt="Instructor 1" class="w-full h-64 object-cover">
+              <div class="px-6 py-8">
+                <h3 class="text-2xl font-semibold mb-4">Nombre del Instructor 1</h3>
+                <p class="text-gray-600 mb-4">Experiencia: X años</p>
+                <p class="text-gray-600 mb-4">Especialidad: Pilates para embarazadas</p>
+                <p class="text-gray-600 mb-4">Certificaciones: Certificación 1, Certificación 2</p>
+                <button class="bg-blue-400 hover:bg-blue-500 text-white font-bold font-sans py-2 px-4 rounded-full">Conoce más</button>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="/assets/images/instructor2.jpg" alt="Instructor 2" class="w-full h-64 object-cover">
+              <div class="px-6 py-8">
+                <h3 class="text-2xl font-semibold mb-4">Nombre del Instructor 2</h3>
+                <p class="text-gray-600 mb-4">Experiencia: Y años</p>
+                <p class="text-gray-600 mb-4">Especialidad: Pilates para personas mayores</p>
+                <p class="text-gray-600 mb-4">Certificaciones: Certificación 3, Certificación 4</p>
+                <button class="bg-blue-400 hover:bg-blue-500 text-white font-bold font-sans py-2 px-4 rounded-full">Conoce más</button>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="/assets/images/instructor3.jpg" alt="Instructor 3" class="w-full h-64 object-cover">
+              <div class="px-6 py-8">
+                <h3 class="text-2xl font-semibold mb-4">Nombre del Instructor 3</h3>
+                <p class="text-gray-600 mb-4">Experiencia: Z años</p>
+                <p class="text-gray-600 mb-4">Especialidad: Pilates para deportistas</p>
+                <p class="text-gray-600 mb-4">Certificaciones: Certificación 5, Certificación 6</p>
+                <button class="bg-blue-400 hover:bg-blue-500 text-white font-bold font-sans py-2 px-4 rounded-full">Conoce más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <section id="benefits" class="bg-gray-100 backdrop-blur-3xl"
         style="background-image: url(/assets/images/mesas.jpg); background-size: cover; background-position: center;">
         <h2 class="text-center py-8 uppercase font-display text-4xl text-white">Beneficios</h2>
         <div class="container mx-auto">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 font-sans">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 font-sans mx-8">
                 <div class="rounded-lg shadow-xl overflow-hidden p-4 flex flex-col items-center bg-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-barbell" width="44"
                         height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
@@ -263,7 +304,7 @@
         <div class="grid lg:grid-cols-3 md:grid-cols-2 md:gap-12">
             <div class="flex justify-center col-span-2 md:col-span-1 mb-5 md:mb-0">
                 <div class="w-28 h-28 flex justify-center items-center">
-                    <img src="assets/images/pfizer/pfizer.png" alt="Logo" />
+                    <img src="/assets/images/pfizer/pfizer.png" alt="Logo" />
                 </div>
             </div>
             <div class="md:pt-0">
