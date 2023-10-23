@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Roboto', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'serif': ['EB Garamond', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
         'display': ['Outfit', 'ui-serif', 'Georgia', 'serif'],
       },
       colors: {
